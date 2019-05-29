@@ -1,0 +1,473 @@
+/*============ Vars ============*/
+/*============ Main ============*/
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+.bold {
+  font-weight: bold;
+}
+.font-50 {
+  font-size: 50px;
+}
+.font-30 {
+  font-size: 30px;
+}
+.font-25 {
+  font-size: 25px !important;
+}
+.font-20 {
+  font-size: 20px;
+}
+.font-16 {
+  font-size: 16px;
+}
+.font-13 {
+  font-size: 13px;
+}
+.btn:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+/*============ Header ============*/
+#header {
+  min-height: 80px;
+  background: url("../img/Path.png") repeat-x left bottom;
+  background-color: #76c7c0;
+  padding: 20px 0 10px;
+  margin: 0;
+  line-height: 1.2;
+}
+#header * {
+  color: #ffffff;
+}
+/*============ Nav ============*/
+.nav-pills > li {
+  margin-left: 20px;
+}
+.nav-pills > li + li {
+  margin-left: 20px;
+}
+.nav-pills > li > a:hover,
+.nav-pills > li > a:focus {
+  color: #ffffff;
+  background-color: #62a29e;
+  box-shadow: 0 3px 1px #528b86;
+}
+/*============ /Nav ============*/
+/*============ /Header ============*/
+/*============ Block2 VESTIBULUM ============*/
+#vestibulum {
+  min-height: 500px;
+  background: url("../img/Fog.jpg") no-repeat;
+  background-size: cover;
+  padding: 20px 0 20px;
+  margin: 0;
+  line-height: 1.2;
+  position: relative;
+  width: 100%;
+  display: table;
+}
+#vestibulum .vertical {
+  text-align: center;
+  vertical-align: middle;
+  display: table-cell;
+}
+#vestibulum .vertical .orange {
+  background-color: #e2534b;
+  max-width: 346px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  float: none;
+  display: block;
+  box-sizing: content-box;
+}
+@media (max-width: 480px) {
+  #vestibulum .vertical .orange {
+    font-size: 27px;
+    margin: 0 40px 10px;
+  }
+}
+@media (min-width: 480px) {
+  #vestibulum .vertical .orange {
+    font-size: 40px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+}
+@media (min-width: 768px) {
+  #vestibulum .vertical .orange {
+    font-size: 50px;
+  }
+}
+@media (min-width: 1200px) {
+  #vestibulum .vertical .orange {
+    font-size: 50px;
+  }
+}
+#vestibulum .vertical .grey {
+  background-color: #7f8c8c;
+  line-height: 1.6;
+  padding: 10px 30px;
+  border-radius: 5px;
+}
+@media (max-width: 480px) {
+  #vestibulum .vertical .grey {
+    max-width: 346px;
+    margin: 0 42px;
+  }
+}
+@media (min-width: 480px) {
+  #vestibulum .vertical .grey {
+    margin: 0 auto;
+    max-width: 370px;
+  }
+}
+@media (min-width: 768px) {
+  #vestibulum .vertical .grey {
+    margin: 0 auto;
+    max-width: 470px;
+  }
+}
+#vestibulum button {
+  width: 50px;
+  height: 60px;
+  background-color: #e2534b;
+}
+#vestibulum button.left {
+  position: absolute;
+  left: 0;
+  top: 46%;
+  border-radius: 0 5px 5px 0;
+}
+#vestibulum button.right {
+  position: absolute;
+  right: 0;
+  top: 46%;
+  border-radius: 5px 0 0 5px;
+}
+#vestibulum * {
+  color: #ffffff;
+}
+/*============ /Block2 VESTIBULUM ============*/
+/*============ /Block3 SERVICES ============*/
+#services {
+  min-height: 590px;
+  background-color: #f3f3f3;
+  padding: 20px 0 25px;
+  line-height: 1.2;
+}
+#services div {
+  border-radius: 5px;
+}
+#services hr {
+  border-top: 5px solid #b0b8b9;
+  width: 60px;
+  display: inline-block;
+  margin: 0 5px 25px;
+}
+#services hr.hr-2 {
+  border-color: #e2534b;
+}
+#services button {
+  color: #ffffff;
+  width: 200px;
+  height: 50px;
+}
+#services .grey-color {
+  background-color: #ececec;
+  padding: 25px 20px;
+  margin: 0 0px 50px;
+}
+#services .grey-color button {
+  background-color: #e8645a;
+  border-bottom: 4px solid #e2534b;
+  margin: 14px 0;
+}
+#services .darker-grey {
+  color: #7f8c8c;
+  margin-bottom: 0;
+}
+#services .font-color {
+  color: #777777;
+  line-height: 1.6;
+}
+.service-block {
+  text-align: center;
+  background-color: #f8f8f8;
+  box-shadow: 0px 4px 1px #e5e6e6;
+  margin-bottom: 50px;
+  padding: 0 12px;
+}
+.service-block .fa {
+  color: #62bdbd;
+  font-size: 60px;
+  transition: all 0.3s;
+  margin-top: 45px;
+}
+.service-block h4 {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 16px;
+  margin-top: 10px;
+  margin-bottom: 28px;
+  color: #7f8c8c;
+}
+.service-block p {
+  font-size: 13px;
+  color: #777777;
+  line-height: 1.6;
+}
+.service-block button {
+  background-color: #76c7c0;
+  border-bottom: 4px solid #62bdbd;
+  position: relative;
+  bottom: -25px;
+  font-size: 14px;
+}
+.service-block:hover {
+  background-color: #ffffff;
+}
+.service-block:hover > button {
+  background-color: #e8645a;
+  border-bottom: 4px solid #e2534b;
+}
+.service-block:hover > .fa {
+  color: #e2534b;
+}
+/*============ /Block3 SERVICES ============*/
+/*============ Block4 Preview ============*/
+#preview {
+  min-height: 400px;
+  background: url("../img/Path2.png") repeat-x left top;
+  background-color: #ececec;
+  padding: 70px 0 0;
+  margin: 0;
+  text-align: center;
+}
+#preview h2 {
+  font-size: 40px;
+  text-transform: uppercase;
+  color: #e2534b;
+}
+#preview p {
+  color: #777777;
+  line-height: 1.6;
+  font-size: 13px;
+}
+@media (max-width: 480px) {
+  #preview p {
+    margin-bottom: -40px;
+  }
+}
+@media (min-width: 480px) {
+  #preview p {
+    margin-bottom: -50px;
+  }
+}
+#preview .preview {
+  position: relative;
+  bottom: -145px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 2px solid #b0b8b9;
+  border-top-width: 40px;
+}
+#preview .preview:hover {
+  -webkit-transform: scale(1.6, 1.6);
+      -ms-transform: scale(1.6, 1.6);
+          transform: scale(1.6, 1.6);
+  z-index: 3;
+}
+@media (max-width: 480px) {
+  #preview .preview {
+    max-width: 246px;
+    bottom: -105px;
+  }
+}
+@media (min-width: 480px) {
+  #preview .preview {
+    max-width: 370px;
+  }
+}
+@media (min-width: 987px) {
+  #preview .preview {
+    max-width: 310px;
+  }
+}
+@media (min-width: 1200px) {
+  #preview .preview {
+    max-width: 370px;
+  }
+}
+/*============ /Block4 Preview ============*/
+/*============ Block5 Skills ============*/
+#skills {
+  min-height: 683px;
+  background-color: #f3f3f3;
+  padding: 220px 0 25px;
+  line-height: 2;
+}
+@media (max-width: 480px) {
+  #skills {
+    padding: 150px 0 25px;
+  }
+}
+#skills * {
+  color: #777777;
+  line-height: 2;
+  font-size: 13px;
+}
+#skills .margin-bottom > div {
+  margin-bottom: 35px;
+}
+#skills .title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #7f8c8c;
+  line-height: 1.2;
+  margin-bottom: 25px;
+}
+#skills .fa-arrow-right {
+  color: #e2534b;
+}
+#skills p {
+  margin: 0;
+}
+#skills a {
+  color: #e2534b;
+  text-decoration: underline;
+}
+#skills .charts {
+  margin-top: 55px;
+}
+#skills .charts img {
+  margin-bottom: 20px;
+  width: 120px;
+}
+#skills blockquote {
+  padding: 10px 15px;
+  margin: 0;
+  background: #f8f8f8;
+  border-radius: 5px;
+  border-left: none;
+}
+#skills blockquote:after {
+  content: "";
+  position: absolute;
+  left: 25px;
+  border-width: 0 35px 35px 0px;
+  border-style: solid;
+  border-color: transparent #f8f8f8;
+  display: block;
+  width: 0;
+}
+#skills blockquote + p {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 5px 0 0 60px;
+}
+#skills #happy-client img {
+  margin-bottom: 10px;
+}
+#skills #happy-client button {
+  background-color: #b0b8b9;
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  margin-left: 20px;
+  border: none;
+}
+#skills #happy-client button:hover {
+  background-color: #e2534b;
+}
+#skills #happy-client button .fa {
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: bold;
+}
+#skills #advertisement {
+  margin-top: 35px;
+  background: url("../img/jquery.png") repeat-x;
+  min-height: 90px;
+  background-repeat: space;
+}
+/*============ /Block5 Skills ============*/
+/*============ Block6 Footer ============*/
+#footer {
+  padding-top: 50px;
+  background: url("../img/Path2.png") repeat-x left top;
+  background-color: #76c7c0;
+  min-height: 300px;
+  font-size: 13px;
+  line-height: 1.8;
+}
+#footer * {
+  color: #ffffff;
+  margin-bottom: 0;
+}
+#footer .margin-20 {
+  margin-bottom: 20px;
+}
+#footer .margin-42 {
+  margin-bottom: 42px;
+}
+@media (max-width: 767px) {
+  #footer .margin-42 {
+    margin-bottom: 0;
+  }
+}
+#footer a .font-20 {
+  padding-left: 12px;
+}
+@media (max-width: 410px) {
+  #footer a .font-20 {
+    font-size: 12.5px;
+  }
+}
+#footer .title {
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.502);
+  font-weight: bold;
+  padding: 10px 0 9px;
+}
+#footer .title .text-normal {
+  font-weight: normal;
+}
+#footer .fa {
+  margin-right: 7px;
+}
+#footer .left-30 {
+  padding-left: 30px;
+}
+#footer .left-30 a {
+  display: block;
+}
+#footer #blog {
+  margin-bottom: 30px;
+}
+#footer #blog img {
+  display: inline-block;
+  float: left;
+  margin-right: 20px;
+}
+#footer #blog .date {
+  color: rgba(0, 0, 0, 0.502);
+}
+/*============ /Block6 Footer ============*/
+/*============ Block7 Postfooter ============*/
+#postfooter {
+  min-height: 50px;
+  background-color: #4eb7ae;
+  font-size: 13px;
+  padding: 20px 0 0;
+}
+#postfooter * {
+  color: #ffffff;
+}
+#postfooter .fa {
+  margin-left: 22px;
+  font-size: 22px;
+}
+/*============ /Block7 Postfooter ============*/
+/*============ /Main ============*/

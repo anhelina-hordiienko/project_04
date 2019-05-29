@@ -1,0 +1,489 @@
+/*============ Vars ============*/
+
+@green-color: rgb(118, 199, 192);
+@dark-green-color: rgb(98, 162, 158);
+@green-shadow: rgb(82, 139, 134);
+@orange-color: rgb(226, 83, 75);
+@dark-grey-color: rgb(63, 70, 70);
+@darker-grey-color: rgb(127, 140, 140);
+@font-color: rgb(119, 119, 119);
+@light-grey-color: rgb(243, 243, 243);
+@grey-color: rgb(236, 236, 236);
+@frame-color: rgb(176, 184, 185);
+@white-color: rgb(255, 255, 255);
+@almoust-white-color: rgb(248, 248, 248);
+@fa-color: rgb(98, 189, 189);
+@btn-orange: rgb(232, 100, 90);
+@screen-xs: 480px;
+@screen-sm: 768px;
+@screen-lg: 1200px;
+@path-img: '../img';
+@path-background: url("@{path-img}/Path.png") repeat-x left bottom;
+@path2-background: url("@{path-img}/Path2.png") repeat-x left top;
+@font-main: 'Open Sans', sans-serif;
+
+/*============ Main ============*/
+body {
+	font-family: @font-main;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.font-50 {
+	font-size: 50px;
+}
+
+.font-30 {
+	font-size: 30px;
+}
+
+.font-25 {
+	font-size: 25px !important;
+}
+
+.font-20 {
+	font-size: 20px;
+}
+
+.font-16 {
+	font-size: 16px;
+}
+
+.font-13 {
+	font-size: 13px;
+}
+
+.btn:hover {
+	opacity: 0.8;
+	text-decoration: underline;
+}
+
+/*============ Header ============*/
+#header {
+	min-height: 80px;
+	background: @path-background;
+	background-color: @green-color;
+	padding: 20px 0 10px;
+	margin: 0;
+	line-height: 1.2;
+	* {
+		color: @white-color;
+	}
+}
+
+/*============ Nav ============*/
+.nav-pills {
+	> li {
+		margin-left: 20px;
+		+ li {
+			margin-left: 20px;
+		}
+
+		// Active state
+		> a {
+			&:hover,
+			&:focus {
+				color: @white-color;
+				background-color: @dark-green-color;
+				box-shadow: 0 3px 1px @green-shadow;
+			}
+		}
+	}
+}
+/*============ /Nav ============*/
+/*============ /Header ============*/
+
+/*============ Block2 VESTIBULUM ============*/
+#vestibulum {
+	min-height: 500px;
+	background: url("@{path-img}/Fog.jpg") no-repeat;
+	background-size: cover;
+	padding: 20px 0 20px;
+	margin: 0;
+	line-height: 1.2;
+	position: relative;
+	width: 100%;
+	display: table;
+	.vertical {
+		text-align: center;
+		vertical-align: middle;
+		display: table-cell;
+		.orange {
+			background-color: @orange-color;
+			max-width: 346px;
+			padding: 5px 10px;
+			border-radius: 5px;
+			float: none;
+			display: block;
+			box-sizing: content-box;
+			@media (max-width: @screen-xs) {
+				font-size: 27px;
+				margin: 0 40px 10px;
+			}
+			@media (min-width: @screen-xs) {
+				font-size: 40px;
+				margin: 0 auto;
+				margin-bottom: 10px;
+			}
+			@media (min-width: @screen-sm) {
+				font-size: 50px;
+			}
+			@media (min-width: @screen-lg) {
+				font-size: 50px;
+			}
+		}
+		.grey {
+			background-color: @darker-grey-color;
+			line-height: 1.6;
+			padding: 10px 30px;
+			border-radius: 5px;
+			@media (max-width: @screen-xs) {
+				max-width: 346px;
+				margin: 0 42px;
+			}
+			@media (min-width: @screen-xs) {
+				margin: 0 auto;
+				max-width: 370px;
+			}
+			@media (min-width: @screen-sm) {
+				margin: 0 auto;
+				max-width: 470px;
+			}
+		}
+	}
+	button {
+		width: 50px;
+		height: 60px;
+		background-color: @orange-color;
+		&.left {
+			position: absolute;
+			left: 0;
+			top: 46%;
+			border-radius: 0 5px 5px 0;
+		}
+		&.right {
+			position: absolute;
+			right: 0;
+			top: 46%;
+			border-radius: 5px 0 0 5px;
+		}
+	}
+	* {
+		color: @white-color;
+	}
+}
+/*============ /Block2 VESTIBULUM ============*/
+
+/*============ /Block3 SERVICES ============*/
+#services {
+	min-height: 590px;
+	background-color: @light-grey-color;
+	padding: 20px 0 25px;
+	line-height: 1.2;
+	div {
+		border-radius: 5px;}
+	hr {
+		border-top: 5px solid rgb(176, 184, 185);
+		width: 60px;
+		display: inline-block;
+		margin: 0 5px 25px;
+		&.hr-2 {
+			border-color: @orange-color;
+		}
+	}
+	button {
+			color: @white-color;
+			width: 200px;
+			height: 50px;
+		}
+	.grey-color {
+		background-color: @grey-color;
+		padding: 25px 20px;
+		margin: 0 0px 50px;
+		button {
+			background-color: @btn-orange;
+			border-bottom: 4px solid @orange-color;
+			margin: 14px 0;
+		}
+	}
+	.darker-grey {
+		color: @darker-grey-color;
+		margin-bottom: 0;
+	}
+	.font-color {
+		color: @font-color;
+		line-height: 1.6;
+	}
+}
+
+.service-block {
+	text-align: center;
+	background-color: @almoust-white-color;
+	box-shadow: 0px 4px 1px rgb(229, 230, 230);
+	margin-bottom: 50px;
+	padding: 0 12px;
+	.fa {
+		color: @fa-color;
+		font-size: 60px;
+		transition: all 0.3s;
+		margin-top: 45px;
+	}
+	h4 {
+		font-weight: bold;
+		text-transform: uppercase;
+		font-size: 16px;
+		margin-top: 10px;
+		margin-bottom: 28px;
+		color: @darker-grey-color;
+	}
+	p {
+		font-size: 13px;
+		color: @font-color;
+		line-height: 1.6;
+	}
+	button {
+		background-color: @green-color;
+		border-bottom: 4px solid @fa-color;
+		position: relative;
+		bottom: -25px;
+		font-size: 14px;
+	}
+	&:hover {
+		background-color: @white-color;
+		> button {
+			background-color: @btn-orange;
+			border-bottom: 4px solid @orange-color;
+		}
+		> .fa {
+			color: @orange-color;
+		}
+	}
+}
+/*============ /Block3 SERVICES ============*/
+
+/*============ Block4 Preview ============*/
+#preview {
+	min-height: 400px;
+	background: @path2-background;
+	background-color: @grey-color;
+	padding: 70px 0 0;
+	margin: 0;
+	text-align: center;
+	h2 {
+		font-size: 40px;
+		text-transform: uppercase;
+		color: @orange-color;
+	}
+	p {
+		color: @font-color;
+		line-height: 1.6;
+		font-size: 13px;
+		@media (max-width: @screen-xs) {
+			margin-bottom: -40px;
+		}
+		@media (min-width: @screen-xs) {
+			margin-bottom: -50px;
+		}
+	}
+	.preview {
+		position: relative;
+		bottom: -145px;
+		margin-bottom: 10px;
+		border-radius: 5px;
+		border: 2px solid @frame-color;
+		border-top-width: 40px;
+		&:hover {
+			transform: scale(1.6, 1.6);
+			z-index: 3;
+		}
+		@media (max-width: @screen-xs) {
+				max-width: 246px;
+				bottom: -105px;
+			}
+		@media (min-width: @screen-xs) {
+			max-width: 370px;
+		}
+		@media (min-width: 987px) {
+			max-width: 310px;
+		}
+		@media (min-width: @screen-lg) {
+			max-width: 370px;
+		}
+	}
+}
+/*============ /Block4 Preview ============*/
+
+/*============ Block5 Skills ============*/
+#skills {
+	min-height: 683px;
+	background-color: @light-grey-color;
+	padding: 220px 0 25px;
+	line-height: 2;
+	@media (max-width: @screen-xs) {
+		padding: 150px 0 25px;
+	}
+	* {
+		color: @font-color;
+		line-height: 2;
+		font-size: 13px;
+	}
+
+	.margin-bottom > div {
+		margin-bottom: 35px;
+	}
+	.title {
+		font-size: 16px;
+		font-weight: bold;
+		color: @darker-grey-color;
+		line-height: 1.2;
+		margin-bottom: 25px;
+	}
+	.fa-arrow-right {
+		color: @orange-color;
+	}
+	p {
+		margin: 0;
+	}
+	a {
+		color: @orange-color;
+		text-decoration: underline;
+	}
+	.charts {
+		margin-top: 55px;
+		img {
+			margin-bottom: 20px;
+			width: 120px;
+		}
+	}
+	blockquote {
+		padding: 10px 15px;
+		margin: 0;
+		background: @almoust-white-color;
+		border-radius: 5px;
+		border-left: none;
+		&:after {
+			content: "";
+			position: absolute;
+			left: 25px;
+			border-width: 0 35px 35px 0px;
+			border-style: solid;
+			border-color: transparent @almoust-white-color;
+			display: block;
+			width: 0;
+		}
+		+ p {
+			font-size: 16px;
+			font-weight: bold;
+			padding: 5px 0 0 60px;
+		}
+	}
+
+	#happy-client {
+		img {
+			margin-bottom: 10px;
+		}
+		button {
+			background-color: @frame-color;
+			width: 40px;
+			height: 40px;
+			border-radius: 5px;
+			margin-left: 20px;
+			border: none;
+			&:hover {
+				background-color: @orange-color;
+			}
+			.fa {
+				color: @white-color;
+				font-size: 20px;
+				line-height: 1.2;
+				font-weight: bold;
+			}
+		}
+	}
+
+	#advertisement {
+		margin-top: 35px;
+		background: url("@{path-img}/jquery.png") repeat-x;
+		min-height: 90px;
+		background-repeat: space;
+	}
+}
+/*============ /Block5 Skills ============*/
+
+/*============ Block6 Footer ============*/
+#footer {
+	padding-top: 50px;
+	background: @path2-background;
+	background-color: @green-color;
+	min-height: 300px;
+	font-size: 13px;
+	line-height: 1.8;
+	* {
+		color: @white-color;
+		margin-bottom: 0;
+	}
+	.margin-20 {
+		margin-bottom: 20px;
+	}
+	.margin-42 {
+		margin-bottom: 42px;
+		@media (max-width: 767px) {
+			margin-bottom: 0;
+		}
+	}
+	a .font-20 {
+		padding-left: 12px;
+		@media (max-width: 410px) {
+			font-size: 12.5px;
+		}
+	}
+	.title {
+		font-size: 20px;
+		color: rgba(0, 0, 0, 0.502);
+		font-weight: bold;
+		padding: 10px 0 9px;
+		.text-normal {
+			font-weight: normal;
+		}
+	}
+	.fa {
+		margin-right: 7px;
+	}
+	.left-30 {
+		padding-left: 30px;
+		a {
+			display: block;
+		}
+	}
+	#blog {
+		margin-bottom: 30px;
+		img {
+		display: inline-block;
+		float: left;
+		margin-right: 20px;
+		}
+		.date {
+			color: rgba(0, 0, 0, 0.502);
+		}
+	}
+}
+/*============ /Block6 Footer ============*/
+
+/*============ Block7 Postfooter ============*/
+#postfooter {
+	min-height: 50px;
+	background-color: darken(@green-color, 11%);
+	font-size: 13px;
+	padding: 20px 0 0;
+	* {
+		color: @white-color;
+	}
+	.fa {
+		margin-left: 22px;
+		font-size: 22px;
+	}
+}
+/*============ /Block7 Postfooter ============*/
+/*============ /Main ============*/
